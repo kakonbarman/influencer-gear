@@ -149,3 +149,12 @@ a{
     color: #787885;
     line-height: 10px;
 }
+.see-more-btn{
+    color: var(--button-color);
+    background: none;
+    border: none;
+    font-weight: 700;
+    padding: initial;
+    float: right;
+    margin-top: 50px;
+}
