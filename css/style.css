@@ -194,6 +194,50 @@ a{
     clear: both;
 }
  
+/*==========================
+    Testimonial Styles
+===========================*/
+.testimonial-area{
+    margin: 136px auto;
+    clear: both;
+}
+.testimonial-area > h1{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.testimonial-area > p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 8px;
+}
+.testimonial-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 48px;
+}
+.testimonial-img img{
+    width: 80%;
+    border-radius: 50%;
+}
+.testimonial-content p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.testimonial-content h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.testimonial-content .testimonial-btn{
+    background-color: transparent;
+    color: var(--button-color);
+    transition: all 0.3s;
+}
+.testimonial-btn:hover{
+    background-color: var(--button-color);
+    color: var(--white-color);
+}
 
 /*==========================
     Footer Styles
@@ -256,6 +300,13 @@ footer{
      /* products responsive */
      .products{
         grid-template-columns: repeat(2, 1fr); 
+    }
+    /*Testimonial responsive*/
+    .testimonial-wrapper{
+        margin-top: 56px;
+        text-align: center;
+        grid-template-columns: 1fr;
+        justify-content: center;
     }
 }
 
