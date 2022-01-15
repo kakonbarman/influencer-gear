@@ -59,7 +59,8 @@ a{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-column-gap: 3em;
-    height: calc(100vh - 102px);
+    margin: 50px 0;
+    /* height: calc(100vh - 102px); */
 }
 .left-content h1{
     font-size: 52px;
@@ -84,12 +85,14 @@ a{
     Brand-identify Styles
 ===========================*/
 .brand-identify-wrapper{
-    margin-bottom: 102px;
+    margin: 102px auto;
 }
 .brands{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 60px;
+    /* justify-content: space-evenly;
+    align-items: center; */
 }
 .brand{
     margin: 36px 0;
@@ -157,4 +160,82 @@ a{
     padding: initial;
     float: right;
     margin-top: 50px;
+    clear: both;
 }
+ 
+
+/*==========================
+    Footer Styles
+===========================*/
+footer{
+    background-color: #0A0826;
+    text-align: center;
+}
+.footer-wrapper{
+    width: 250px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.footer-wrapper h2{
+    color: var(--white-color);
+    margin-bottom: 0;
+}
+.footer-wrapper p{
+    color: #D9DBE1;
+    margin-top: 8px;
+    line-height: 24px;
+}
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*==========================
+    Responsive Styles
+===========================*/
+/* Tablet Devices */
+@media only screen and (max-width: 768px){
+    /* Header responsive */
+    .nav-bar{
+        justify-content: center;
+    }
+    .header-content-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .left-content{
+        order: 2;
+    }
+    .right-content{
+        order: 1;
+    }
+
+    /* Brands responsive */
+    .brands{
+        grid-template-columns: repeat(4, 1fr); 
+    }
+     /* products responsive */
+     .products{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 425px){
+     /* Brands responsive */
+     .brands{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    /* products responsive */
+    .products{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+
+
+/* @media only screen and (min-width: 768px) and (max-width: 992px){
+    .header-content-wrapper{
+        grid-template-columns: 1fr;
+    }
+} */
