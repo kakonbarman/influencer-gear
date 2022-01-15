@@ -1,0 +1,96 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@500&family=Source+Sans+Pro:wght@400;700&family=Spline+Sans:wght@400;500;700&family=Yeseva+One&display=swap');
+
+/*=========================
+        common styles 
+==========================*/
+:root{
+    --text-color: #3A3A3A;
+    --button-color: #E02C6D;
+    --white-color: #ffffff;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+.custom-button{
+    color: var(--white-color);
+    display: inline-block;
+    margin-top: 24px;
+    background-color: var(--button-color);
+    padding: 10px 24px; 
+    border-radius: 20px;
+    border: 1px solid #aa2354;
+    font-size: 16px;
+}
+.custom-button .fa-arrow-right{
+    margin-left: 8px;
+}
+
+/* ========================
+        header styles 
+ =========================*/
+ /* Nav-bar css */
+ .nav-bar{
+    height: 102px;
+    display: flex;
+    align-items: center;
+ }
+ .nav-bar h2{
+     font-size: 24px;
+     font-weight: 700;
+     line-height: 36px;
+ }
+  /* Header css */
+.header-content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 3em;
+    height: calc(100vh - 102px);
+}
+.left-content h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.left-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.right-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-content img{
+    width: 80%;
+}
+
+/*==========================
+    Brand-identify Styles
+===========================*/
+.brand-identify-wrapper{
+    margin-bottom: 102px;
+}
+.brands{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    margin: 36px 0;
+}
