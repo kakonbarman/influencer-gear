@@ -61,6 +61,20 @@ a{
     grid-column-gap: 3em;
     margin: 50px 0;
 }
+@keyframes bottomToTop {
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.left-content{
+    animation-name: bottomToTop;
+    animation-duration: 1s;
+    position: relative;
+}
+
 .left-content h1{
     font-size: 52px;
     font-weight: 700;
@@ -72,13 +86,24 @@ a{
     line-height: 24px;
 }
 .header-btn{
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, margin-left 0.3s ease-in;
 }
 .header-btn:hover{
     background-color: var(--white-color);
-    color: var(--button-color)
+    color: var(--button-color);
+}
+@keyframes topToBottom {
+    0%{
+        top:-100%;
+    }
+    100%{
+        top: 0;
+    }
 }
 .right-content{
+    animation-name: topToBottom;
+    animation-duration: 1s;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
