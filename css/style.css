@@ -36,7 +36,7 @@ a{
     font-size: 16px;
 }
 .custom-button .fa-arrow-right{
-    margin-left: 8px;
+    margin-left: 5px;
 }
 
 /* ========================
@@ -60,7 +60,6 @@ a{
     align-items: center;
     grid-column-gap: 3em;
     margin: 50px 0;
-    /* height: calc(100vh - 102px); */
 }
 .left-content h1{
     font-size: 52px;
@@ -72,13 +71,17 @@ a{
     font-weight: 400;
     line-height: 24px;
 }
+.header-btn{
+    transition: background-color 0.3s;
+}
+.header-btn:hover{
+    background-color: var(--white-color);
+    color: var(--button-color)
+}
 .right-content{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.right-content img{
-    width: 80%;
 }
 
 /*==========================
@@ -91,11 +94,14 @@ a{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-column-gap: 60px;
+    justify-items: center;
     /* justify-content: space-evenly;
     align-items: center; */
 }
 .brand{
     margin: 36px 0;
+    justify-content: center;
+    display: flex;
 }
 
 /*==========================
@@ -188,6 +194,14 @@ footer{
 .social-media{
     display: flex;
     justify-content: space-evenly;
+}
+.social-icon i{
+    font-size: 18px;
+    color: var(--white-color);
+    background-color: #22213C;
+    padding: 14px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 
